@@ -1,4 +1,5 @@
 from fastapi import FastAPI, HTTPException, Depends
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import Generator, Optional
 from enum import Enum
@@ -13,6 +14,22 @@ import services
 models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="EcoWallet API")
+
+
+# CONFIGURAÇÃO DO CORS
+origins = [
+    "http://127.0.0.1:5500", 
+    "http://localhost:5500",
+    "http://localhost:3000", # Caso use React
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"], # libera GERAL
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 
