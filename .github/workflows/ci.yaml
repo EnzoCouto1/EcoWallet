@@ -1,0 +1,32 @@
+name: Integração Contínua (CI)
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest # máquina Linux virtual
+
+    steps:
+    
+    - uses: actions/checkout@v3
+
+    
+    - name: Set up Python 3.12
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.12"
+
+    # Instala as dependências (FastAPI, Pytest, etc)
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    # Roda os testes
+    - name: Rodar Testes com Pytest
+      run: |
+        pytest
