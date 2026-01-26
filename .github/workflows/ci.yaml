@@ -28,5 +28,7 @@ jobs:
 
     # Roda os testes
     - name: Rodar Testes com Pytest
+      env:  # Define variável de ambiente para o banco de dados de teste
+        DATABASE_URL: "sqlite:///./dummy.db" 
       run: |
         pytest
