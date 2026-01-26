@@ -1,0 +1,14 @@
+.env
+
+# Lixo do Python (Cache)
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Ambiente Virtual
+venv/
+.venv/
+env/
+
+# Arquivos de IDE (VS Code)
+.vscode/
