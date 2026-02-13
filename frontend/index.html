@@ -4,8 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoWallet</title>
+
+
+    <style>
+        #homelink{
+            background-color: rgb(71, 67, 71);
+            color: white;
+            padding:  15px;
+            border-radius: 10px;
+            
+        }
+
+        #homelink:hover{
+            background-color: rgb(120, 222, 56);
+        }
+
+
+
+    </style>
 </head>
 <body>
     <h1>Bem-vindo ao EcoWallet</h1>
+
+
+    <a href = "teste.html" target="_blank"> Teste Final </a>
+
+
+    <h2> Selecione qual é o seu Animal de estimação: </h2>
+    
+    <input id = "Option_Dog" type = "radio" value="Cachorro" name = "animal">
+    <label for = "Option_Dog"> Cachorro </label>
+    
+
+    <br><br>
+    <input id = "Option_Cat" type = "radio" value="Gato" name = "animal">
+    <label for = "Option_Cat"> Gato </label>
+    
+
+    <br><br>
+    <input id = "Option_Orn" type = "radio" value="Ornitorrinco" name = "animal">
+    <label for = "Option_Orn"> Ornitorrinco </label>
+
+
+    <h2>Digite uma Mensagem</h2>
+
+    <textarea name = "Mensagem" placeholder = "Digite um Texto"></textarea>
+
+
+    
+    
+
+    <br><br>
+
+    <a href = "https:google.com" target="_blank">
+        <img src="images/Fonoaudiologo.jpg" alt="EcoWallet Logo"
+        width="300">
+
+    </a>
+
+    <br><br>
+
+    <table border="1">
+        <tr>
+            <th> Nome </th>
+            <th> Valor</th>
+            <th> Poder </th>
+        </tr>
+        <tr>
+            <td> Yasuo </td>
+            <td> R$ 6300  </td>
+            <td> R Blade</td>
+        </tr>
+        <tr>
+            <td> Zed </td>
+            <td> R$ 4800  </td>
+            <td> Killer Shadow</td>
+        </tr>
+    </table>
+
+
+    <form>  
+
+        <br> <br>
+        <label for = "Campo_Nome:" > Nome </label>
+        <input id = "Campo_Nome" type = "text" placeholder="Digite o Nome do seu Campeão" required>
+        <br><br>
+
+        <label for= "Campo_Valor"> Valor: </label>
+        <input type = "number" id = "Campo_Valor" placeholder="Digite o Valor do seu Campeão" required>
+
+        <br><br>
+        <label for =  "Campo_Poder" > Poder: </label>
+        <input id = "Campo_Poder" type = "text" placeholder="Digite o Poder do seu Campeão" required>
+
+        <br><br>
+        <input type = "submit" value= "Enviar">
+
+
+
+
+    </form>
+
+    <h2> Link Home Original</h2>
+    <a id = "homelink" href="Home.html" target="_blank"> Home Page </a>
+            
+
+    
 </body>
 </html>
