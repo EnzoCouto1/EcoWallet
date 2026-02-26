@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+.navbar{
+    display: flex;
+    background-color: #433f3f;
+    color: aliceblue;
+    flex-flow: row wrap;
+    justify-content: left;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    align-items: stretch;
+    
+    height: 100px;
+    
+}
+
+.navbar a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #433f3f;
+    transition: 0.3s;
+    position: relative;
+    flex: 1;
+    height: 100%;
+    width: 50%;
+   
+    justify-content: center;
+    align-items: center;
+    flex: 20%;
+    font-size: 35px;
+    
+}
+.navbar h2 {
+    flex: 80%;
+}
+
+.navbar a:hover {
+    background-color: rgb(68, 151, 72); 
+}
+
+.container-dashboard {
+    
+    display: flex;
+    height: 632px;
+    margin-left: 0;
+}
+
+.saldo-section {
+    flex: 20%;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+
+
+
+.form-section {
+    background-color: white;
+    padding: 25px;
+    flex:60%;
+    
+}
+
+.form-section button{
+    margin-top: 270px;
+}
+
+
+
+.extrato-section {
+    background-color: white;
+    padding: 25px;
+    flex:20%;
+    border-left:#433f3f 5px solid;
+     
+}
+
+.saldo-section {
+    background-color: #166534;
+    color: white;
+    text-align: center;
+}
+
+.saldo-section h1 {
+    font-size: 3rem;
+    margin-top: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    margin-top: 15px;
+}
+
+input, select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: rgb(68, 151, 72);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #166534;
+}
+
+
+ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+li {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between; 
+    border-left: 5px solid #166534; 
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dashboard </title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="Home.html"> EcoWallet </a>
+        <h2></h2>
+    </nav>
+
+    <div class="container-dashboard">
+        
+        <section class="saldo-section">
+            <h2>Saldo Atual</h2>
+            <h1 id="valor-saldo">R$ 0,00</h1>
+        </section>
+
+        <section class="form-section">
+            <h3>Nova Transação</h3>
+            <form id="form-transacao">
+                <input type="text" id="descricao" placeholder="Descrição (ex: Conta de Luz)" required>
+                <input type="number" id="valor" placeholder="Valor (ex: 150.00)" step="0.01" required>
+                
+                <select id="tipo" required>
+                    <option value="receita">Receita (Entrada)</option>
+                    <option value="despesa">Despesa (Saída)</option>
+                </select>
+
+                <button type="submit">Adicionar</button>
+            </form>
+        </section>
+
+        <section class="extrato-section">
+            <h3>Extrato</h3>
+            <ul id="lista-transacoes">
+                <li>Carregando transações...</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
